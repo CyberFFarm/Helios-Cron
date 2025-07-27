@@ -11,8 +11,8 @@
 
 ### 1. 安装
 ```bash
-git clone https://github.com/your-repo/helios-cron-scheduler
-cd helios-cron-scheduler
+https://github.com/CyberFFarm/Helios-Cron.git
+cd Helios-Cron
 npm install
 ```
 
