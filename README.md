@@ -13,7 +13,7 @@
 
 ### 1. 安装
 ```bash
-https://github.com/CyberFFarm/Helios-Cron.git
+git clone https://github.com/CyberFFarm/Helios-Cron.git
 cd Helios-Cron
 npm install
 ```
