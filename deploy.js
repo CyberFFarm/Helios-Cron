@@ -234,7 +234,6 @@ async function main() {
     console.log("\n📖 下一步:");
     console.log("  1. 在区块浏览器中验证合约部署");
     console.log("  2. 运行 npm start 创建 Cron 任务");
-    console.log("  3. 使用 npm run monitor 监控任务执行");
     
   } catch (error) {
     console.error("\n❌ 部署流程失败:");
