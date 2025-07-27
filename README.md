@@ -22,9 +22,10 @@ copy .env.example .env
 
 编辑 `.env` 文件，只需要填写你的私钥：
 ```env
-PRIVATE_KEY=0x你的钱包私钥
+PRIVATE_KEY=你的钱包私钥
 # 其他配置使用默认值即可
 ```
+ `.env` 为本地运行文件，不会上传到服务器，不涉及私钥窃取问题
 
 ### 3. 运行
 ```bash
