@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node cron-counter.js",
     "dev": "node --watch cron-counter.js",
-    "deploy": "node deploy.js",
-    "monitor": "node monitor.js",
-    "watch-cron": "node watch-cron.js"
+    "deploy": "node deploy.js"
   },
   "keywords": [
     "helios",
