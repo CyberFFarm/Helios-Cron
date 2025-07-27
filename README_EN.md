@@ -1,4 +1,6 @@
-# 🚀 Helios-Cron Automated Task Scheduler
+**🚀 Helios-Cron Automated Task Scheduler**
+
+[中文](README.md) | English
 
 **Beginner-Friendly, Easy to Use**  
 **One-Click Smart Contract Deployment with Local Secure Code Execution**
@@ -28,23 +30,25 @@ PRIVATE_KEY=your_wallet_private_key
 ```
 The `.env` file runs locally and will not be uploaded to servers, safe to use.
 
-### 3. Run
+### 3. One-Click Deploy Contract
 ```bash
-# One-click deploy contract and start task
-npm run deploy && npm start
+npm run deploy
+```
+
+The script will automatically:
+- Compile smart contract
+- Deploy to Helios Testnet
+- Auto-update contract address in `.env` file
+- Display deployment success information
+
+### 4. Start Task
+```bash
+npm start
 ```
 
 Success when you see `🎉 Task completed!`
 
-## 📊 Monitor Tasks
 
-```bash
-# Real-time monitoring (recommended)
-npm run watch-cron
-
-# Quick status check  
-npm run monitor
-```
 
 ## 💰 Test Token Gas Fees
 
@@ -53,15 +57,10 @@ npm run monitor
 - Runtime: About 3-4 hours
 - Execution frequency: Every 6 minutes
 
-## 🛠️ Smart Contract Deployment
+## 🛠️ Manual Deployment (Optional)
 
-### Method 1: Automatic Deployment (Recommended)
-```bash
-npm run deploy
-```
-The script will automatically compile and deploy the contract, and update the configuration file.
+If automatic deployment fails, you can use Remix for manual deployment:
 
-### Method 2: Manual Deployment (Remix)
 1. Open [Remix IDE](https://remix.ethereum.org/)
 2. Create new file, copy `contracts/TickContract.sol` code
 3. Compile contract (Solidity 0.8.19+)
@@ -72,7 +71,7 @@ The script will automatically compile and deploy the contract, and update the co
    Chain ID: 7001
    Currency Symbol: HLS
    ```
-5. Deploy contract, get contract address
+5. Deploy contract successfully, get contract address 'CONTRACT= 0x...'
 6. Fill contract address into `TARGET_CONTRACT` in `.env` file
 
 ## 🔒 Security Information
@@ -89,19 +88,11 @@ The script will automatically compile and deploy the contract, and update the co
 - Regularly check balance and task execution status
 - Never share `.env` file or private key with anyone
 
-## 🎯 Use Cases
 
-- **DeFi Automation**: Auto-compounding, liquidation monitoring
-- **Gaming Mechanisms**: Regular reward distribution, status updates  
-- **DAO Governance**: Auto-execute proposals, token distribution
-- **Learning Practice**: Understand blockchain automation execution
 
 ## 🆘 Common Issues
 
 ### Insufficient Balance
-```bash
-npm run monitor  # Check current balance
-```
 Solution: Get HLS from Helios testnet faucet
 
 ### Configuration Error
@@ -129,8 +120,6 @@ npm run deploy
 ```
 ├── cron-counter.js              # Main program
 ├── deploy.js                    # Contract deployment script
-├── monitor.js                   # Status monitoring tool
-├── watch-cron.js                # Real-time monitoring tool
 ├── cronManager.js               # Task manager
 ├── config.js                    # Configuration management
 ├── utils.js                     # Utility functions
@@ -162,16 +151,5 @@ All configurations are in the `.env` file, beginners can use default values:
 4. **Auto Execute**: System automatically calls contract every 300 blocks
 5. **Fee Deduction**: Each execution deducts gas fees from deposited amount
 
-## 🤝 Support
-
-- 🐛 [Report Issues](https://github.com/CyberFFarm/Helios-Cron/issues)
-- ⭐ [Give a Star](https://github.com/CyberFFarm/Helios-Cron)
-- 💬 Join Helios community discussions
-
 ## 📄 License
-
-MIT License - Completely free to use
-
----
-
-**Start your Helios automation journey now!** 🚀
+MIT License
