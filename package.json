@@ -1,0 +1,26 @@
+{
+  "name": "helios-cron-scheduler",
+  "version": "1.0.0",
+  "description": "🚀 Helios 自动化任务调度器 - 新手版 | 超简单！一键部署！本地运行！安全无漏洞！",
+  "main": "cron-counter.js",
+  "scripts": {
+    "start": "node cron-counter.js",
+    "dev": "node --watch cron-counter.js",
+    "deploy": "node deploy.js",
+    "monitor": "node monitor.js",
+    "watch-cron": "node watch-cron.js"
+  },
+  "keywords": [
+    "helios",
+    "blockchain",
+    "cron",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "solc": "^0.8.30"
+  }
+}
