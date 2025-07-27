@@ -8,6 +8,8 @@
 **Make your smart contracts execute automatically every 6 minutes, get started in 3 minutes!**
 
 **Quickly Complete Daily Missions**
+![图片描述](pic/pic0.png) 
+![图片描述](pic/pic1.png)
 
 ## ⚡ Quick Start
 
